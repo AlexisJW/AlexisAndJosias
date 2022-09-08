@@ -7,7 +7,70 @@
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+   <div class="container">
+     <header class="header">
+      <center>
+      <h1 id ="title" class="center">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform </p>
+    </center>
+    </header>
+
+      <center>
+        <form id="survey-form">
+        <div class="form-group">
+         <center><label id="name-label" for="name">Name</label></center>
+         <input type="text"  id="name" name="name" value="" placeholder="Enter your name Please!">
+       </div>
+
+        <div class="form-group">
+         <label for="email" id="email-label">Email</label>
+         <input type="email" id="email" name="email" value="" placeholder="Enter your email" required>
+       </div>
+
+
+       <div class="form-group">
+        <label for="number" id="number-label">Age(optional)</label>
+        <input type="number" id="number" name="number" value="" placeholder="Enter age" min="1" max="100">
+       </div>
+
+       <div class="form-group" id="formOption">
+         <p>What is your favorite feature of freeCodeCamp?</p>
+        <select id="dropdown" enabled="" class="form-control">
+          <option value="job" ></option>
+          <option value="student"></option>
+          <option value="Other"></option>
+        </select>
+       </div>
+
+       <div class="form-group">
+         <p>Choose</p>
+         <center><label for="radio1" id="radio1-label">Front-end Projects</label></center>
+           <input name="prefer" id="radio1" value="Student" type="radio" class="input-checkbox">Front-end Projects</label>
+        <label for="radio2" id="radio2-label">Back-end Projects</label>
+            <input name="prefer" id="radio2" value="back-end-projects" type="radio" class="input-checkbox">Back-end Projects
+       </div>
+
+       <div class="form-group">
+         <p>Would you recommend freeCodeCamp to a friend?</p>
+           <label for="chck1" id="chck1-label"></label>
+           <input name="prefer" id="chck1-label" value="Student" type="checkbox" class="input-checkbox">Front-end Projects</label>
+        <label for="chck3" id="chck2-label"></label>
+            <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects
+        </label>
+        <label for="chck4" id="chck4-label"></label>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Back-end Projects
+        </label>
+       </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="#survey-form" name="comments" rows="8" cols="80" placeholder="make your comment">
+
+          </textarea>
+        </div>
+        <input type="submit" id="submit" name="" value="Submit the form">
+      </form></center>
+
+    <div class="container">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
